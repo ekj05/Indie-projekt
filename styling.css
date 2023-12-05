@@ -10,10 +10,24 @@ body{
 
 header{
     background-color: rgb(81, 77, 77);
-    height: 8em;
+    height: 6em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+button{
+    transition: 0.5s;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+button:active{
+    scale: 0.9;
 }
 
 .buttondiv{
@@ -24,11 +38,48 @@ header{
 .headerbutton{
     height: 2em;
     width: 5em;
+    background-color: cornflowerblue;
+    border-radius: 1em;
+    margin-right: 1em;
+    border: solid rgb(0, 210, 210) 2px;
 }
 
 .gallerydiv{
     background-color: rgb(146, 144, 144);
-    height: 27em;
+    height: 35em;
+}
+
+.galleryimg1{
+    position: absolute;
+}
+
+.galleryimg2{
+    position: absolute;
+}
+
+.galleryimg3{
+    position: absolute;
+}
+
+.galleryform{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.galleryradio{
+    scale: 1.5;
+    margin: 0.5em;
+}
+
+.mainbutton{
+    height: 2.5em;
+    width: 5em;
+    background-color: orangered;
+    border: solid orange 2px;
+    border-radius: 2em;
+    font-size: xx-large;
 }
 
 .infomain{
@@ -41,11 +92,11 @@ header{
 }
 
 .infosection{
-    background-color: rgb(0, 217, 217);
-    height: 40%;
+    background-color: rgb(2, 208, 208);
+    height: 35%;
     width: 70%;
     border-radius: 2em;
-    border: solid black 2px;
+    padding: 1em;
 }
 
 footer{
