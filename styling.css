@@ -16,6 +16,7 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 button{
@@ -49,16 +50,13 @@ button:active{
     height: 35em;
 }
 
-.galleryimg1{
+.galleryimg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     position: absolute;
-}
-
-.galleryimg2{
-    position: absolute;
-}
-
-.galleryimg3{
-    position: absolute;
+    opacity: ;
+    transition: 1s;
 }
 
 .galleryform{
@@ -66,6 +64,7 @@ button:active{
     display: flex;
     justify-content: center;
     align-items: end;
+    z-index: 3;
 }
 
 .galleryradio{
@@ -83,7 +82,7 @@ button:active{
 }
 
 .infomain{
-    height: 50em;
+    height: 80em;
     background-color: rgb(52, 52, 177);
     display: flex;
     flex-direction: column;
@@ -102,4 +101,5 @@ button:active{
 footer{
     background-color: black;
     height: 11em;
+    color: white;
 }
