@@ -49,6 +49,10 @@ function handleclick2(){
     checkradio()
 }
 
+function login(){
+    localStorage.setItem("userdata")
+}
+
 radio[0].addEventListener("click", checkradio)
 radio[1].addEventListener("click", checkradio)
 radio[2].addEventListener("click", checkradio)
