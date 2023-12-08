@@ -6,7 +6,16 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: rgb(52, 52, 177);
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 25%, rgba(5,4,70,1) 40%, rgba(9,9,121,1) 54%, rgba(0,212,255,1) 76%);
+}
+
+#bodynr {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 25%, rgba(5,4,70,1) 40%, rgba(9,9,121,1) 54%, rgba(0,212,255,1) 76%);
+    background-size: cover;
+    height: 100vh;
+    width: auto;
 }
 
 header{
@@ -18,10 +27,20 @@ header{
     position: sticky;
     top: 0;
     z-index: 10;
+    border-bottom: solid black 2px;
 }
 
 button{
     transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin-left: 1em;
+    color: white;
 }
 
 button:hover{
@@ -121,7 +140,7 @@ button:active{
 }
 
 .infosection{
-    background-color: rgb(2, 208, 208);
+    background-color: rgba(2, 208, 208, 0.69);
     height: 35%;
     width: 70%;
     border-radius: 2em;
@@ -129,7 +148,7 @@ button:active{
 }
 
 footer{
-    background-color: black;
+    background-color: rgba(2,0,36,1);
     height: 11em;
     color: white;
 }
@@ -140,7 +159,7 @@ footer{
     top: 6.5em;
     height: 85%;
     width: 90%;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.599);
     border-radius: 3em;
 }
 
@@ -197,11 +216,12 @@ h2{
     border-radius: 3em;
     z-index: 1;
     margin: 4em 0;
+    box-shadow: black 0.5em 0.5em 2em;
 }
 
 .bookingimg{
     margin-top: 2em;
-    height: 13em;
+    height: 15em;
     width: 95%;
     border: solid black 2px;
     border-radius: 20%;
