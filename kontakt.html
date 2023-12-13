@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Book Din Rejse Nu!</title>
         <link rel="stylesheet" href="styling.css">
+        <script defer src="./script kontakt.js"></script>
     </head>
     <body id="bodynr">
         <header>
@@ -17,23 +18,29 @@
         </header>
         
         <main class="undersidemain" id="kontaktmain">
-                <form class="formkontakt">
-                    <label for="text">
+                <h2>Kontakt</h2>
+                <form class="formkontakt" novalidate>
+                    <label for="text" class="kontaktlabel">
                         Navn
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
+                        <span></span>
                     </label>
-                    <label for="email">
+                    <label for="email" class="kontaktlabel">
                         Email
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
+                        <span></span>
                     </label>
-                    <label for="tel">
+                    <label for="tel" class="kontaktlabel">
                         Telefon
-                        <input type="tel" name="phone">
+                        <input type="tel" name="phone" required>
+                        <span></span>
                     </label>
-                    <label for="text">
+                    <label for="text" class="kontaktlabel">
                         Besked
-                        <input type="text" name="message">
+                        <textarea name="besked" cols="10" rows="10" required></textarea>
+                        <span></span>
                     </label>
+                    <input type="submit">
                 </form>
         </main>
     </body>
