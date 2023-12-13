@@ -10,7 +10,7 @@ body{
     background: linear-gradient(0deg, rgba(2,0,36,1) 25%, rgba(5,4,70,1) 40%, rgba(9,9,121,1) 54%, rgba(0,212,255,1) 76%);
 }
 
-#bodynr {
+#bodybooking {
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 25%, rgba(5,4,70,1) 40%, rgba(9,9,121,1) 54%, rgba(0,212,255,1) 76%);
     background-size: cover;
@@ -145,12 +145,27 @@ button:active{
     width: 70%;
     border-radius: 2em;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#info1{
+    justify-content: space-evenly;
+}
+
+.sizeup{
+    font-size: larger;
+}
+
+#info2{
+    justify-content: space-between;
 }
 
 footer{
     background-color: rgba(2,0,36,1);
     height: 11em;
     color: white;
+    text-align: center;
 }
 
 .undersidemain{
@@ -195,8 +210,14 @@ footer{
 
 .textbooking{
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     font-size: small;
+}
+
+.spanbooking{
+    font-size: medium;
+    font-weight: bold;
 }
 
 .secttext{
